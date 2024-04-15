@@ -54,6 +54,7 @@
               # Other things
               pkgs.aws-sso-creds
               pkgs.grpc
+              pkgs.java-language-server
             ];
           shellHook = ''
             export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [pkgs.stdenv.cc.cc]}
