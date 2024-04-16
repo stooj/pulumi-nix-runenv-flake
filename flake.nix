@@ -53,6 +53,7 @@
               pkgs.maven
               # Other things
               pkgs.aws-sso-creds
+              pkgs.black  # Python code formatter
               pkgs.grpc
             ];
           shellHook = ''
