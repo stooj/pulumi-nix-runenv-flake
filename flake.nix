@@ -5,7 +5,7 @@
     # stooj-nur.url = "github:stooj/nur-packages";
   };
   outputs = {
-    # self,
+    self,
     nixpkgs,
     flake-utils,
     # stooj-nur,
@@ -68,6 +68,7 @@
             export PATH="$PATH:$HOME/.local/pulumi-binaries/latest"
             export AWS_PROFILE="pulumi-ce"
             export PULUMI_HOME=$(pwd)/.pulumi
+            eval $(aws-sso-creds export)
           '';
         };
       }
