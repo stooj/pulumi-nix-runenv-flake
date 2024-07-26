@@ -65,6 +65,7 @@
             pkgs.aws-sso-creds
             pkgs.black # Python code formatter
             pkgs.grpc
+            pkgs.k9s
           ];
           shellHook = ''
             export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [pkgs.stdenv.cc.cc]}
