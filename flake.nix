@@ -27,7 +27,10 @@
             pkgs.docker
             # Cloud tools
             pkgs.awscli2
-            pkgs.azure-cli
+            (pkgs.azure-cli.withExtensions
+              [
+                pkgs.azure-cli.extensions.automation
+              ])
             pkgs.doctl
             gdk
             pkgs.hcloud
