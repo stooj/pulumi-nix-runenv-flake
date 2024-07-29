@@ -30,6 +30,7 @@
             (pkgs.azure-cli.withExtensions
               [
                 pkgs.azure-cli.extensions.automation
+                pkgs.azure-cli.extensions.portal
               ])
             pkgs.doctl
             gdk
