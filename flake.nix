@@ -73,6 +73,7 @@
             export PATH="$PATH:$HOME/.local/pulumi-binaries/latest"
             export AWS_PROFILE="pulumi-ce"
             export PULUMI_HOME=$(pwd)/.pulumi
+            export GOPATH=$(pwd)/.go
             eval $(aws-sso-creds export)
           '';
         };
