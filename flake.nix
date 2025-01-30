@@ -56,6 +56,7 @@
             # # Langauge dependencies
             pkgs.python3
             pkgs.poetry
+            pkgs.uv
             # (pkgs.python3.withPackages(ps: with ps; [
             #   pulumi
             #   pulumi-azure-native
