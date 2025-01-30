@@ -39,6 +39,7 @@
             # Languages
             pkgs.dotnet-sdk
             pkgs.nodejs
+            pkgs.yarn
             pkgs.go
             pkgs.openjdk17 # currently-supported LTS version
             # Pulumi packages
