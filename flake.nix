@@ -34,6 +34,7 @@
               ])
             pkgs.doctl
             gdk
+            pkgs.gh
             pkgs.hcloud
             pkgs.kubectl
             # Languages
