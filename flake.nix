@@ -42,6 +42,7 @@
             pkgs.yarn
             pkgs.go
             pkgs.openjdk17 # currently-supported LTS version
+            pkgs.openjdk11
             # Pulumi packages
             # (pkgs.pulumi.withPackages(ps: with ps; [
             #     pulumi-language-go
@@ -63,6 +64,7 @@
             #   # pulumi-aws
             #   pulumi-aws-native
             # ]))
+            pkgs.gradle
             pkgs.maven
             # Other things
             pkgs.aws-sso-creds
