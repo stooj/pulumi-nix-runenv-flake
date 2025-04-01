@@ -75,10 +75,10 @@
           ];
           shellHook = ''
             export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [pkgs.stdenv.cc.cc]}
-            export PATH="$PATH:$HOME/.local/pulumi-binaries/latest"
+            export GOPATH=$(pwd)/.go
+            export PATH="$PATH:$HOME/.local/pulumi-binaries/latest:$GOPATH/bin"
             export AWS_PROFILE="pulumi-ce"
             export PULUMI_HOME=$(pwd)/.pulumi
-            export GOPATH=$(pwd)/.go
             eval $(aws-sso-creds export)
           '';
         };
