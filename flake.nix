@@ -70,6 +70,7 @@
             # Other things
             pkgs.aws-sso-creds
             pkgs.black # Python code formatter
+            pkgs.delve # Go debugger
             pkgs.grpc
             pkgs.k9s
           ];
