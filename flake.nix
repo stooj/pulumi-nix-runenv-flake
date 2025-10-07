@@ -40,6 +40,7 @@
             # Languages
             pkgs.dotnet-sdk
             pkgs.nodejs
+            pkgs.typescript
             pkgs.yarn
             pkgs.go
             pkgs.openjdk17 # currently-supported LTS version
