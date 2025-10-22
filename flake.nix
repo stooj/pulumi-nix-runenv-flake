@@ -72,6 +72,7 @@
             pkgs.aws-sso-creds
             pkgs.black # Python code formatter
             pkgs.delve # Go debugger
+            pkgs.graphviz # For generating pprof svg files
             pkgs.grpc
             pkgs.k9s
           ];
